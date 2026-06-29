@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fight Kicks Giveaway Log</title>
+<title>Giveaway Logs</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -334,7 +334,7 @@
 
 <header>
   <h1>GIVEAWAY LOG</h1>
-  <p class="sub">Every draw is random, logged automatically and published without edits.</p>
+  <p class="sub">Every draw is random, logged automatically and published without edits</p>
   <div class="stats-bar" id="statsBar"></div>
 </header>
 
@@ -443,7 +443,7 @@ function renderGiveaways(giveaways) {
          </div>`
       : `<div class="winners-row">
            Winner${g.winners && g.winners.length > 1 ? 's' : ''}: <b>${winnersText}</b>
-           <div class="timestamp" title="${fullDate(g.ended_at)}">${timeAgo(g.ended_at)} · ${fullDate(g.ended_at)}</div>
+           <div class="timestamp" title="${fullDate(g.ended_at)}">${fullDate(g.ended_at)}</div>
          </div>`;
 
     return `
